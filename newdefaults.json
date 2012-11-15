@@ -1,0 +1,49 @@
+#basic
+{
+	"time": {
+	"timezone": "US/Pacific",
+		"ntp": "time.apple.com",
+		"dst": 1
+	},
+
+	"phone": {
+	"ring_type": "Normal",
+	"ring_file": "",
+	"password_changes": null, 
+	"logo":  "kazoo",
+	"dialplans": "",
+	"languages": "en",
+	"directory_source": "http://provisioner.net/phone_directory/",
+	"per_line_settings": 
+		{
+		"display_name": "kazooguy"
+		"other_junk": ""
+		}
+	},
+
+#advanced
+	"specs": {
+	"codec_selection": ["G729", "PCMU", "PCMA"],
+	"multiple_lines": false,
+	"hard_keys": true,
+	"soft_keys": false,
+	"network_settings":
+		{
+		"vlan"
+			{
+			"voice_vlan": false,
+			"data_vlan": false
+			},
+		"qos":
+			{
+			"tag_number": ""
+			}
+		}
+	},
+
+#automatic settings
+	"sip":{
+	"local_sip_port": 5060,
+	"remote_port_settings": null
+	}
+}
