@@ -1,0 +1,96 @@
+{
+    "ntp": null,
+    "provisioning_type": null,
+    "tftp_server": null,
+    "webserver_type": null,
+    "webserver_cert": null,
+    "http_server": null,
+    "http_path": null,
+    "http_port": null,
+    "intercom_connect_type": null,
+    "answer_after_policy": null,
+    "firmware_status": null,
+    "timezone": null,
+    "utc": null,
+    "tone_scheme": null,
+
+    "admin": {
+    	"login": null,
+    	"password": null,
+    	"mode": null
+    },
+
+    "lines": [
+        {
+            "display_name": null,
+            "username": null,
+            "realname": null,
+            "auth_password": null,
+            "active": null,
+            "host": null,
+            "outbound": null,
+            "voicemail": null,
+            "idle_text": null,
+            "dtmf_info": null,
+            "ringer": null,
+            "xml_screen_url": null,
+            "idle_text": null,
+            "srtp": null
+        }
+    ],
+
+    "backlight": null,
+    "backlight_idle": null,
+    "contrast": null,
+
+    "vol":{
+    	"headset": null,
+    	"speaker": null,
+    	"ringer": null,
+    	"handset": null,
+    	"speaker_mic": null,
+    	"handset_mic": null,
+    	"headset_mic": null
+    },
+
+    "gui":{
+    	"fkey1": null,
+    	"fkey2": null,
+    	"fkey3": null,
+    	"fkey4": null
+    },
+
+    "dkey":{
+    	"help": null,
+    	"snom": null,
+    	"conf": null,
+    	"transfer": null,
+    	"hold": null,
+    	"dnd": null,
+    	"record": null,
+    	"retrieve": null,
+    	"retrieve": null,
+    	"redial": null,
+    	"directory": null,
+    	"menu": null
+	},
+
+	"action":{
+		"received_subscr_notify_url": null,
+		"dnd_on_url": null,
+		"dnd_off_url": null,
+		"redirection_on_url": null,
+		"redirection_off_url": null,
+		"incoming_url": null,
+		"outgoing_url": null,
+		"setup_url": null,
+		"offhook_url": null,
+		"onhook_url": null,
+		"missed_url": null,
+		"connected_url": null,
+		"disconnected_url": null
+	},
+
+	"advertisement": null,
+	"advertisement_url": null
+}

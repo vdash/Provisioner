@@ -1,0 +1,133 @@
+{
+    "ntp": null,
+    "provisioning_type": null,
+    "tftp_server": null,
+    "http_server": null,
+    "http_path": null,
+
+    "lines": [
+        {
+            "outbound_proxy": {
+                // IP address
+                "host": null,
+                "port": null
+            },
+
+            "registrar": {
+                // IP address
+                "host": null,
+                "port": null
+            },
+
+            "display_name": null,
+            "auth_name": null,
+            "username": null,
+            "auth_password": null,
+            "voicemail": null,
+            "mode": null
+        }
+    ],
+
+    "sip_digit_timeout": null,
+    "sip_dial_plan": null,
+    "sip_voicemail": null,
+
+    "soft_keys": [
+        {
+            "type": null,
+            "label": null,
+            "value": null,
+            "states": null
+        }
+    ],
+
+    "top_soft_keys": [
+        {
+            "type": null,
+            "label": null,
+            "value": null
+        }
+    ],
+
+    "prg_keys": [
+        {
+            "type": null,
+            "value": null
+        }
+    ],
+
+    "expmod1_keys": [
+        {
+            "type": null,
+            "label": null,
+            "value": null
+        }
+    ],
+
+    "expmod2_keys": [
+        {
+            "type": null,
+            "label": null,
+            "value": null
+        }
+    ],
+
+    "expmod3_keys": [
+        {
+            "type": null,
+            "label": null,
+            "value": null
+        }
+    ],
+
+    "feature_keys": [
+        {
+            "label": null,
+            "control": null,
+            "hs_event": null,
+            "base_event": null
+        }
+    ],
+    "phone-settings": [
+        {
+            "language": null,
+            "dnd_on_code": null,
+            "dnd_off_code": null,
+            "dhcp": null,
+            "utc_offset": null,
+            "ntp_server": null,
+            "dst": null,
+            "timezone": null,
+            "ring_sound": null,
+            "network_id_port": null,
+            "challenge_response": null,
+            "rtp_port_start": null,
+            "rtp_port_end": null,
+            "tone_scheme": null,
+            "block_url_dialing": null,
+            "display_method": null,
+            "record_missed_calls": null,
+            "log_level": null
+        }
+
+    ],
+}
+
+
+
+
+    <dialplan>
+        <template match="*." timeout="2" scheme="sip" user="phone" rewrite="" />
+        <template match="*.." timeout="2" scheme="sip" user="phone" rewrite="" />
+        <template match="*..." timeout="2" scheme="sip" user="phone" rewrite="" />
+        <template match="*...." timeout="2" scheme="sip" user="phone" rewrite="" />
+        <template match="911" timeout="0" scheme="sip" user="phone" rewrite="" />
+        <template match="0" timeout="2" scheme="sip" user="phone" rewrite="" />
+        <template match="011*" timeout="4" scheme="sip" user="phone" rewrite="" />
+        <template match="[2-9]......" timeout="3" scheme="sip" user="phone" rewrite="" />
+        <template match="[2-9]........." timeout="3" scheme="sip" user="phone" rewrite="" />
+        <template match="[0-1][2-9]........." timeout="3" scheme="sip" user="phone" rewrite="" />
+        <template match="[1-9].." timeout="3" scheme="sip" user="phone" rewrite="" />
+        <template match="[1-9]..." timeout="3" scheme="sip" user="phone" rewrite="" />
+    </dialplan>
+</settings>
